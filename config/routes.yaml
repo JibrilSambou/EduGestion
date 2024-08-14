@@ -1,5 +1,11 @@
+# config/routes.yaml
+
+# Routes pour les contrôleurs réguliers
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
+    resource: ../src/Controller/
+    type: attribute
+
+# Routes pour le tableau de bord admin et les contrôleurs EasyAdmin
+admin_dashboard:
+    resource: ../src/Controller/Admin/
     type: attribute
